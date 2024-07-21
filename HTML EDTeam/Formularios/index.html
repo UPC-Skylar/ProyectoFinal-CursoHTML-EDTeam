@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- prettier-ignore -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios - EDTeam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Modulo 7 - Formularios</h1>
+    <!-- Checkbox se usa para que el usuario marque cierto tipo de datos-->
+    <form action="./recibido.html" autocomplete="on">
+      <fieldset>
+        <legend>¿Que quieres estudiar?</legend>  
+        <label>
+          <input type="checkbox" name="cursos">
+          HTML
+        </label>
+        <label>
+          <input type="checkbox" name="cursos">
+          CSS
+        </label>
+        <label>
+          <input type="checkbox" name="cursos">
+          JavaScript
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Cual es tu sexo?</legend>  
+        <label>
+          <input type="radio" name="sexo">
+          Hombre
+        </label>
+        <label>
+          <input type="radio" name="sexo">
+          Mujer
+        </label>
+        <!-- El name debe ser el mismo en cada input radio para poder elegir una sola opcion. -->
+      </fieldset>
+
+      <div>
+        <select name="pais" id=""> <!-- Es un campo de lista -->
+          <!-- optgroup sirve para agrupar varias opciones -->
+          <optgroup label="Sudamérica">
+            <option value="pe">Perú</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+          </optgroup>
+          <optgroup label="Norteamérica">
+            <option value="usa">Estados Unidos</option>
+            <option value="ca">Canada</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <label for="comment">Deja tu comentario</label>
+      <textarea name="" id="comment" cols="30" rows="10"></textarea>
+      <!-- Atributos de formulario -->
+    </form>
+  </body>
+</html>
